@@ -1,73 +1,127 @@
-# Welcome to your Lovable project
+# AI_StudyBuddy 🤖📚 - Smart Homework Organizer
 
-## Project info
+![StudyBuddy AI](screenshot.png)
 
-**URL**: https://lovable.dev/projects/193c0815-dd12-4e42-861c-3ebe9433d6a4
+StudyBuddy is your intelligent, gamified academic planner built for the modern student. It organizes assignments, plans your study sessions, and motivates you with personalized AI coaching and collaborative tools. StudyBuddy turns the often overwhelming academic grind into a smart, fun, and productive experience.
 
-## How can I edit this code?
+This tool is ideal for:
 
-There are several ways of editing your application.
+- Students who are behind their schedule and tasks
+- Educators building smarter learning environments
+- Self-learners who need a responsive and adaptive assistant
 
-**Use Lovable**
+## Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/193c0815-dd12-4e42-861c-3ebe9433d6a4) and start prompting.
+- 🧠 **AI Chat Companion / Study Coach**  
+  Get intelligent study advice tailored to your schedule, priorities, and difficulty levels.
 
-Changes made via Lovable will be committed automatically to this repo.
+- 📅 **Google Calendar Integration**  
+  Automatically import deadlines and events.
 
-**Use your preferred IDE**
+- 🎮 **Gamified Productivity**  
+  Earn XP, maintain streaks, and unlock rewards as you study.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 🌙 **Dark Mode**  
+  For those productive late-night sessions.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- 👥 **Collaborative Study Planner**  
+  Create or join study circles, assign tasks, and track accountability together.
 
-Follow these steps:
+- 💡 **AI-Powered Micro-Plans**  
+  Generate bite-sized sessions from complex tasks for better focus and retention.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- 🔔 **Smart Reminders & Motivation**  
+  Friendly nudges and customizable motivational quotes to keep you going.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🧠 Implementation Strategy
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### ✅ 1. Gamified Productivity
 
-**Edit a file directly in GitHub**
+- **Points System**: Earn points based on task difficulty or time.
+- **Streak Tracker**: Encourages daily learning with a reset upon a missed day.
+- **Unlockables**: Themes and avatars unlock at XP thresholds.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### ✅ 2. AI Chat Companion / Study Coach
 
-**Use GitHub Codespaces**
+- GPT-4 Turbo integration with context-aware prompts.
+- Smart prioritization (e.g. “I have 2 hours and 3 tasks…”).
+- Session breakdowns based on due date, difficulty, and subject.
+- Reminder engine with friendly messages and motivational boosts.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### ✅ 3. Collaborative Study Planner
 
-## What technologies are used for this project?
+- **Groups / Circles**: Users join or create study groups.
+- **Shared Tasks + Roles**: Assign responsibilities and receive deadlines.
+- **Accountability Tracker**: View group member progress and nudge when needed.
 
-This project is built with:
+## 🧩 How It All Works Together
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- A student joins a group and logs in daily.
 
-## How can I deploy this project?
+- Completing tasks earns points and boosts streaks.
 
-Simply open [Lovable](https://lovable.dev/projects/193c0815-dd12-4e42-861c-3ebe9433d6a4) and click on Share -> Publish.
+- AI suggests study priorities and micro-tasks.
 
-## Can I connect a custom domain to my Lovable project?
+- Study circles add a layer of accountability and support.
 
-Yes, you can!
+- All features combined = smart, social, and stress-free study.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Tech Stack
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- **Frontend**
+  - React.js (with TypeScript)
+  - Tailwind CSS for styling
+  - Lucide React for icons
+  - React Hot Toast for notifications
+
+- **Backend**
+  - Node.js
+  - Express.js
+  - MySQL
+
+- **APIs**
+  - OpenAI GPT-4 API
+
+## Getting Started
+
+1. **Prerequisites**
+   - Node.js >= 14
+   - MySQL Server
+   - OpenAI API Key
+
+2. **Environment Setup**
+   ```bash
+   # Clone the repository
+   git clone <repository-url>
+   cd studybuddy
+
+   # Install dependencies
+   npm install
+
+   # Set up environment variables
+   ```
+
+3. **Development**
+   ```bash
+   # Start the development server
+   npm run dev
+   ```
+
+4. **Build**
+   ```bash
+   # Create production build
+   npm run build
+   ```
+
+## Authentication
+
+The application uses Supabase Authentication with email/password sign-in. Users can:
+- Create new accounts
+- Sign in to existing accounts
+- Sign out
+- Access their personal assignments and study data
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
